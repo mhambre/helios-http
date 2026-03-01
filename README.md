@@ -1,3 +1,28 @@
 # Helios - HTTP Server
 
-A simple HTTP server to be build on top of the helios TCP stack. This is intended to be a simple proof of concept for building a high-level application on top of the low-level TCP primitives provided by the core crate to the sci crate.
+`helios-http` is an HTTP service layer intended to sit on top of Helios networking primitives. The goal is a high-level proof-of-concept app riding on lower-level stack components.
+
+For top-level build scripts, shared targets, and project-wide setup, use the main Helios README:
+https://github.com/mhambre/helios
+
+## Build / Run / Debug
+
+Direct cargo build:
+
+```bash
+cargo +nightly build -p helios-http --target i686-unknown-linux-gnu
+```
+
+Run directly after build:
+
+```bash
+./target/i686-unknown-linux-gnu/debug/helios-http
+```
+
+If/when this crate is wired into your root build aliases, use:
+
+```bash
+just build http release
+just build http debug
+just gdb http
+```
