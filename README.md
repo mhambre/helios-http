@@ -10,13 +10,13 @@ https://github.com/mhambre/helios
 Direct cargo build:
 
 ```bash
-cargo +nightly build -p helios-http --target i686-unknown-linux-gnu
+cargo +nightly build -p helios-http --target x86_64-unknown-linux-gnu
 ```
 
 Run directly after build:
 
 ```bash
-./target/i686-unknown-linux-gnu/debug/helios-http
+./target/x86_64-unknown-linux-gnu/debug/helios-http
 ```
 
 If/when this crate is wired into your root build aliases, use:
